@@ -11,7 +11,7 @@ function BestWedding() {
           </p>
         </div>
         <div>
-          <button className="uppercase border border-[#ffb937] hover:bg-red-500 text-[26px] py-4 px-12 rounded-lg">
+          <button className="uppercase border border-[#ffb937] text-[26px] py-4 px-12 rounded-lg">
             Check Availability
           </button>
         </div>
