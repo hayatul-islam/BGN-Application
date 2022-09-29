@@ -26,12 +26,12 @@ function Gallery() {
         />
         <img
           className="w-[480px] h-[600px] rounded-[40px] grayscale mt-24"
-          src="https://images.unsplash.com/photo-1519671845924-1fd18db430b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYzfHxwYXJ0eSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          src="https://images.unsplash.com/photo-1569937756447-1d44f657dc69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHBhcnR5JTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt=""
         />
         <img
-          className="w-[300px] h-[500px] rounded-[40px] grayscale "
-          src="https://assets.website-files.com/5e23629e05541e1ef1703eab/5e78a64d7766d1a78495ac41_PKP(1163of1191)-p-1080.jpeg"
+          className="w-[300px] h-[450px] rounded-[40px] grayscale "
+          src="https://images.unsplash.com/photo-1524253860834-0e02422248bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHBhcnR5JTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt=""
         />
       </div>
