@@ -26,22 +26,22 @@ function MeetTheTeam() {
         </div>
         <div className="space-y-6">
           <div className="space-y-2">
-            <h1 className="text-[70px] font-medium leading-none">
-              GET YOUR PARTY STARTED WITH DC’S{" "}
+            <h1 className="text-[70px] font-medium leading-none uppercase">
+              Subway tile snackwave ugh,
               <span className="block text-[#ffae00] ">FAVORITE DJS</span>
             </h1>
             <h4 className="text-[28px] italic ">
               SERVING DC, MARYLAND, AND VIRGINIA
             </h4>
             <p className="text-[24px] max-w-[660px] ">
-              You deserve to have the most fun you've had in your entire life on
-              your wedding day. Picking the best DJ service plays a huge role in
-              that.
+              Franzen knausgaard before they sold out fam neutra pop-up subway
+              tile health goth wolf glossier authentic edison bulb man braid
+              prism sriracha cray.
             </p>
           </div>
           <div>
             <button className="uppercase border border-[#ffb937] text-[26px] py-4 px-12 rounded-lg">
-              Check Availability
+              Meet The Team
             </button>
           </div>
         </div>

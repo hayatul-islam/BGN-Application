@@ -7,7 +7,7 @@ function BestWedding() {
         <div>
           <h4 className="text-[20px] pb-3 uppercase">BEST WEDDING DJ IN DC</h4>
           <p className="text-[120px] leading-none font-medium uppercase">
-            A GREAT WEDDING STARTS WITH A PACKED DANCE FLOOR{" "}
+            A GREAT WEDDING STARTS WITH A PACKED DANCE FLOOR
           </p>
         </div>
         <div>
