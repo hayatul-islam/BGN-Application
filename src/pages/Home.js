@@ -6,11 +6,9 @@ function Home() {
   return (
     <>
       <div className="pt-[260px] px-[70px]">
-        <div className="">
-          <BestWedding />
-          <div className="fixed w-[91%] h-[530px] top-[20%] z-0  ">
-            <VideoAnimation />
-          </div>
+        <BestWedding />
+        <div className="fixed w-[91%] h-[530px] top-[20%] z-0  ">
+          <VideoAnimation />
         </div>
       </div>
     </>
