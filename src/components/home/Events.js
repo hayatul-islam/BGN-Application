@@ -4,27 +4,27 @@ import Event from "./Event";
 const datas = [
   {
     id: 1,
-    title: "PACKED DANCE FLOORS",
-    body: "If there's one thing we're known for, it’s getting people moving with highly skilled DJs and top quality sound systems. This is a PARTY, so let's get your dance floor rocking!",
-    img: "https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8c16e02802b_BGM%20Washington%20DC%20DJ16.svg",
+    title: "Kombucha irony vape",
+    body: "Blog tbh hella portland. Kombucha irony vape, fixie tumblr fit prism kinfolk craft beer poutine cold-pressed la croix schlitz shabby chic gluten-free.",
+    img: "https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8369902801e_rockon.svg",
   },
   {
     id: 2,
-    title: "SEAMLESS TRANSITIONS",
-    body: "If there's one thing we're known for, it’s getting people moving with highly skilled DJs and top quality sound systems. This is a PARTY, so let's get your dance floor rocking!",
-    img: "https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8c16e02802b_BGM%20Washington%20DC%20DJ16.svg",
+    title: "SNarwhal hella retro",
+    body: "Narwhal hella retro vegan, banjo messenger bag biodiesel sustainable. Squid mustache dreamcatcher bicycle rights, occupy irony street art palo santo bruh. ",
+    img: "https://assets.website-files.com/5e23629e05541e1ef1703eab/61bf76bec9edd66c6a5118ab_seamless2x.svg",
   },
   {
     id: 3,
-    title: "SEAMLESS TRANSITIONS",
-    body: "If there's one thing we're known for, it’s getting people moving with highly skilled DJs and top quality sound systems. This is a PARTY, so let's get your dance floor rocking!",
+    title: "Normcore bespoke",
+    body: "Normcore bespoke prism, photo booth chillwave heirloom irony. DSA vape direct trade, sustainable lomo fit venmo lyft microdosing fixie poutine pickled.",
     img: "https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8c16e02802b_BGM%20Washington%20DC%20DJ16.svg",
   },
   {
     id: 4,
-    title: "SEAMLESS TRANSITIONS",
-    body: "If there's one thing we're known for, it’s getting people moving with highly skilled DJs and top quality sound systems. This is a PARTY, so let's get your dance floor rocking!",
-    img: "https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8c16e02802b_BGM%20Washington%20DC%20DJ16.svg",
+    title: "Literally kinfolk",
+    body: "Literally kinfolk shabby chic la croix squid cloud bread. Put a bird on it tonx chicharrones, gastropub tacos shoreditch master cleanse seitan occupy offal meggings.",
+    img: "https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8121802802a_BGM%20Washington%20DC%20DJ17.svg",
   },
 ];
 
