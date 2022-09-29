@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BestWedding from "../components/home/BestWedding";
 import Events from "../components/home/Events";
+import Gallery from "../components/home/Gallery";
 import MeetTheTeam from "../components/home/MeetTheTeam";
 import VideoAnimation from "../components/home/VideoAnimation";
 
@@ -33,6 +34,9 @@ function Home() {
       <MeetTheTeam />
       <div className="px-6">
         <Events />
+      </div>
+      <div className="pl-6">
+        <Gallery />
       </div>
     </>
   );
