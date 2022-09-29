@@ -8,7 +8,7 @@ function Header() {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="border-b ">
+      <div className="border-b fixed w-full">
         <div className="flex justify-between items-center px-[70px] py-4 ">
           <div className="">
             <div className="w-[90px] h-[90px] relative">
@@ -22,7 +22,7 @@ function Header() {
           </div>
           <div>
             <RiMenu4Fill
-              onClick={() => setMenu(!menu)}
+              onClick={() => setMenu(false)}
               size="40"
               color="white"
             />
