@@ -3,7 +3,7 @@ import React from "react";
 function Gallery() {
   return (
     <>
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-between py-[200px]">
         <img
           className="w-[336px] h-[400px] rounded-[40px] grayscale"
           src="https://images.unsplash.com/photo-1584778671969-cf6edbe34ad3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU4fHxwYXJ0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
