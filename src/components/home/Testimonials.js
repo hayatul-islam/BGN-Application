@@ -87,7 +87,7 @@ function Testimonials() {
   return (
     <>
       <div className=" bg-[url('https://assets.website-files.com/5e23629e05541e1ef1703eab/61d5c18d861413850a714caa_bgm-testimonials.jpg')] bg-no-repeat bg-cover">
-        <div className="bg-[#202020] bg-opacity-80 py-12">
+        <div className="bg-[#202020] bg-opacity-80 py-12 overflow-hidden">
           <div className="space-y-2 py-12">
             <ParallaxText baseVelocity={2}>
               <img
