@@ -8,7 +8,7 @@ function Header() {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="border-b fixed w-full">
+      <div className="border-b fixed w-full z-50 backdrop-blur-md ">
         <div className="flex justify-between items-center px-[70px] py-4 ">
           <div className="">
             <div className="w-[90px] h-[90px] relative">
