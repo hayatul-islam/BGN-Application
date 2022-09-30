@@ -1,5 +1,53 @@
-import React from "react";
+import { wrap } from "@motionone/utils";
+import {
+  motion,
+  useAnimationFrame,
+  useMotionValue,
+  useScroll,
+  useSpring,
+  useTransform,
+  useVelocity,
+} from "framer-motion";
+import React, { useRef } from "react";
 import Testimonial from "./Testimonial";
+
+function ParallaxText({ children, baseVelocity = 100 }) {
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
+    stiffness: 400,
+  });
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    clamp: false,
+  });
+  const x = useTransform(baseX, (v) => `${wrap(-10, 10, v)}%`);
+  console.log(wrap);
+
+  const directionFactor = useRef(1);
+  useAnimationFrame((t, delta) => {
+    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1;
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+
+    baseX.set(baseX.get() + moveBy);
+  });
+
+  return (
+    <div>
+      <motion.div className="scroller" style={{ x }}>
+        <span>{children} </span>
+      </motion.div>
+    </div>
+  );
+}
 
 // fake data
 const datas = [
@@ -38,22 +86,29 @@ const datas = [
 function Testimonials() {
   return (
     <>
-      <div className="py-12">
-        <div className="space-y-2 py-12">
-          <img
-            src="https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8771302801f_what-the-people.png"
-            alt=""
-          />
-          <img
-            src="https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8771302801f_what-the-people.png"
-            alt=""
-          />
-        </div>
-        <div className="px-[70px] py-12">
-          <div className="grid grid-cols-3 gap-12">
-            {datas?.map((data, i) => (
-              <Testimonial key={i} data={data} />
-            ))}
+      <div className=" bg-[url('https://assets.website-files.com/5e23629e05541e1ef1703eab/61d5c18d861413850a714caa_bgm-testimonials.jpg')] bg-no-repeat bg-cover">
+        <div className="bg-[#202020] bg-opacity-80 py-12">
+          <div className="space-y-2 py-12">
+            <ParallaxText baseVelocity={2}>
+              <img
+                src="https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8771302801f_what-the-people.png"
+                alt=""
+              />
+            </ParallaxText>
+            <ParallaxText baseVelocity={-2}>
+              <img
+                src="https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8771302801f_what-the-people.png"
+                alt=""
+              />
+            </ParallaxText>
+          </div>
+
+          <div className="px-[70px] py-16">
+            <div className="grid grid-cols-3 gap-12">
+              {datas?.map((data, i) => (
+                <Testimonial key={i} data={data} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
