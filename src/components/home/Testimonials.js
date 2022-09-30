@@ -91,12 +91,14 @@ function Testimonials() {
           <div className="space-y-2 py-12">
             <ParallaxText baseVelocity={2}>
               <img
+                className="h-[50px]"
                 src="https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8771302801f_what-the-people.png"
                 alt=""
               />
             </ParallaxText>
             <ParallaxText baseVelocity={-2}>
               <img
+                className="h-[50px]"
                 src="https://assets.website-files.com/5e23629e05541e1ef1703eab/61ae57722ab3b8771302801f_what-the-people.png"
                 alt=""
               />
