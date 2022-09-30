@@ -125,7 +125,7 @@ function ContractUs() {
         </div>
         <div className=" xl:max-h-[950px]">
           <img
-            className="w-full h-full rounded-r-[60px] grayscale"
+            className="w-full h-full rounded-tr-[60px] grayscale"
             src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNvbnRyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
           />
