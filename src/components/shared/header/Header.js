@@ -27,7 +27,7 @@ function Header() {
 
           <div>
             <RiMenu4Fill
-              onClick={() => setMenu(false)}
+              onClick={() => setMenu(!menu)}
               size="40"
               color="white"
             />
@@ -35,17 +35,24 @@ function Header() {
         </div>
       </div>
       {menu && (
-        <div className="text-[106px] absolute w-screen h-screen">
-          <div>
-            <nav>
+        <div className="fixed grid items-between pl-[90px] z-50 w-screen h-screen backdrop-blur pb-8  ">
+          <div className="flex justify-end pr-[76px] py-[40px]">
+            <RiMenu4Fill
+              onClick={() => setMenu(!menu)}
+              size="40"
+              color="white"
+            />
+          </div>
+          <div className="text-[116px]  font-medium uppercase ">
+            <nav className="space-y-3">
               <NavLink className="block leading-none" to="/">
                 Home
               </NavLink>
               <NavLink className="block leading-none" to="/">
-                Home
+                About
               </NavLink>
               <NavLink className="block leading-none" to="/">
-                Home
+                UPLIGHTING
               </NavLink>
               <NavLink className="block leading-none" to="/">
                 Home
