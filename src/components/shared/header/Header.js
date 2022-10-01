@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MdClose } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import { ScrollRotate } from "react-scroll-rotate";
@@ -25,23 +26,21 @@ function Header() {
             </div>
           </div>
 
-          <div>
-            <RiMenu4Fill
-              onClick={() => setMenu(!menu)}
-              size="40"
-              color="white"
-            />
-          </div>
+          {!menu && (
+            <div className="cursor-pointer">
+              <RiMenu4Fill
+                onClick={() => setMenu(!menu)}
+                size="40"
+                color="white"
+              />
+            </div>
+          )}
         </div>
       </div>
       {menu && (
-        <div className="fixed grid items-between pl-[90px] z-50 w-screen h-screen backdrop-blur pb-8  ">
-          <div className="flex justify-end pr-[76px] py-[40px]">
-            <RiMenu4Fill
-              onClick={() => setMenu(!menu)}
-              size="40"
-              color="white"
-            />
+        <div className="fixed grid items-between pl-[90px] z-50 w-screen h-screen backdrop-blur">
+          <div className="flex justify-end pr-[86px] py-[40px] cursor-pointer">
+            <MdClose onClick={() => setMenu(!menu)} size="40" color="white" />
           </div>
           <div className="text-[116px]  font-medium uppercase ">
             <nav className="space-y-3">
