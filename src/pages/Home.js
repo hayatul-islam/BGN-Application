@@ -28,7 +28,7 @@ function Home() {
       <div className="pt-[260px] px-[70px]">
         <BestWedding />
         {showVideo && (
-          <div className="fixed w-[91%] h-[530px] top-[20%] z-0  ">
+          <div className="fixed w-[91%] h-[530px] z-[-50] top-[20%]">
             <VideoAnimation />
           </div>
         )}
