@@ -5,16 +5,18 @@ import logo from "../../../assets/img/logo.png";
 function Footer() {
   return (
     <>
-      <div className="pt-40">
-        <div className="grid grid-cols-[30%_15%_15%_15%_15%] px-[70px] py-12 justify-between">
+      <div className="pt-40 text-center md:text-start">
+        <div className="grid md:grid-cols-[30%_15%_15%_15%_15%] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px] py-12 md:justify-between">
           <div>
-            <div className="w-[70px] h-[70px] relative">
-              <img src={logoBg} alt="" />
-              <img
-                className="w-[60px] h-[60px] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] "
-                src={logo}
-                alt=""
-              />
+            <div className="flex justify-center md:justify-start">
+              <div className="w-[70px] h-[70px] relative">
+                <img src={logoBg} alt="" />
+                <img
+                  className="w-[60px] h-[60px] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] "
+                  src={logo}
+                  alt=""
+                />
+              </div>
             </div>
             <div>
               <h4 className="text-[22px] font-medium">Bryan George Music</h4>
