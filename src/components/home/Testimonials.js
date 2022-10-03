@@ -85,9 +85,9 @@ const datas = [
 function Testimonials() {
   return (
     <>
-      <div className=" bg-[url('https://assets.website-files.com/5e23629e05541e1ef1703eab/61d5c18d861413850a714caa_bgm-testimonials.jpg')] bg-no-repeat bg-cover">
+      <div className=" md:bg-[url('https://assets.website-files.com/5e23629e05541e1ef1703eab/61d5c18d861413850a714caa_bgm-testimonials.jpg')] bg-no-repeat bg-cover">
         <div className="bg-[#202020] bg-opacity-80 py-12 overflow-hidden">
-          <div className="space-y-2 py-12">
+          <div className="hidden sm:block space-y-2 py-12">
             <ParallaxText baseVelocity={2}>
               <img
                 className="h-[50px]"
@@ -104,8 +104,8 @@ function Testimonials() {
             </ParallaxText>
           </div>
 
-          <div className="px-[70px] py-16">
-            <div className="grid grid-cols-3 gap-12">
+          <div className="px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px] py-4 md:py-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-4 xl:gap-12">
               {datas?.map((data, i) => (
                 <Testimonial key={i} data={data} />
               ))}

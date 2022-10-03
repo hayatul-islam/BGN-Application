@@ -3,6 +3,7 @@ import BestWedding from "../components/home/BestWedding";
 import Events from "../components/home/Events";
 import Gallery from "../components/home/Gallery";
 import MeetTheTeam from "../components/home/MeetTheTeam";
+import Testimonials from "../components/home/Testimonials";
 import VideoAnimation from "../components/home/VideoAnimation";
 
 function Home() {
@@ -28,7 +29,7 @@ function Home() {
       <MeetTheTeam />
       <Events />
       <Gallery />
-      {/* <Testimonials /> */}
+      <Testimonials />
       {/* <div className="px-[70px] py-[250px]">
         <TakeEvents />
       </div> */}
