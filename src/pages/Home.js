@@ -20,14 +20,8 @@ function Home() {
   }
   return (
     <>
-      <div className="pt-[260px] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
-        <BestWedding />
-        {showVideo && (
-          <div className="fixed w-[91%] h-[530px] z-[-50] top-[20%]">
-            <VideoAnimation />
-          </div>
-        )}
-      </div>
+      <BestWedding />
+      {showVideo && <VideoAnimation />}
       {/* <MeetTheTeam />
       <div className="px-6">
         <Events />
