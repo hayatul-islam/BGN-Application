@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import BestWedding from "../components/home/BestWedding";
+import Events from "../components/home/Events";
 import MeetTheTeam from "../components/home/MeetTheTeam";
 import VideoAnimation from "../components/home/VideoAnimation";
 
@@ -24,10 +25,8 @@ function Home() {
       <BestWedding />
       {showVideo && <VideoAnimation />}
       <MeetTheTeam />
-      {/* <div className="px-6">
-        <Events />
-      </div>
-      <div className="pl-6">
+      <Events />
+      {/* <div className="pl-6">
         <Gallery />
       </div>
       <Testimonials />

@@ -31,28 +31,28 @@ const datas = [
 function Events() {
   return (
     <>
-      <div className="bg-[#131313ad] rounded-[60px] mb-12 mt-[200px]">
-        <div className="bg-[#333] py-12 rounded-[60px] ">
-          <div className="max-w-5xl mx-auto ">
-            <h2 className="text-[70px] leading-none font-medium ">
-              BETTER EVENTS NEED
-            </h2>
-            <div className="flex space-x-6">
-              <h2 className="text-[70px] text-[#ffb937] font-medium leading-none ">
-                THE BEST DJS
-              </h2>
-              <p className="max-w-[535px] text-[24px] ">
-                We understand the importance of great music for your party. If
-                you're looking for a DJ who has the experience to rock your
-                event all night long, shoot us a message!
-              </p>
+      <div className="px-2 md:px-6">
+        <div className="bg-[#131313ad] rounded-[20px] xl:rounded-[60px] mb-12 mt-[80px] sm:mt-[100px] xl:mt-[200px]">
+          <div className="bg-[#333] py-6 xl:py-12 rounded-[20px] xl:rounded-[60px] px-3 ">
+            <div className="md:max-w-[600px] lg:max-w-[700px] xl:max-w-[1050px] mx-auto text-[30px] sm:text-[47px] md:text-[36px] lg:text-[47px] xl:text-[70px]">
+              <h2 className="leading-none font-medium ">BETTER EVENTS NEED</h2>
+              <div className="md:flex md:space-x-6">
+                <h2 className="text-[#ffb937] font-medium leading-none ">
+                  THE BEST DJS
+                </h2>
+                <p className="md:w-[320px] xl:w-[535px] text-[14px] sm:text-[18px] md:text-[14px] xl:text-[24px] pt-1 ">
+                  We understand the importance of great music for your party. If
+                  you're looking for a DJ who has the experience to rock your
+                  event all night long, shoot us a message!
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-2 gap-10 px-12 pt-20 pb-12">
-          {datas?.map((data) => (
-            <Event event={data} key={data?.id} />
-          ))}
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10 px-4 lg:px-8 xl:px-10 pt-12 md:pt-20 pb-6 md:pb-12">
+            {datas?.map((data) => (
+              <Event event={data} key={data?.id} />
+            ))}
+          </div>
         </div>
       </div>
     </>
