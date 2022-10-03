@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import BestWedding from "../components/home/BestWedding";
-import Events from "../components/home/Events";
-import Gallery from "../components/home/Gallery";
-import MeetTheTeam from "../components/home/MeetTheTeam";
-import TakeEvents from "../components/home/TakeEvents";
-import Testimonials from "../components/home/Testimonials";
 import VideoAnimation from "../components/home/VideoAnimation";
 
 function Home() {
@@ -25,7 +20,7 @@ function Home() {
   }
   return (
     <>
-      <div className="pt-[260px] px-[70px]">
+      <div className="pt-[260px] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
         <BestWedding />
         {showVideo && (
           <div className="fixed w-[91%] h-[530px] z-[-50] top-[20%]">
@@ -33,7 +28,7 @@ function Home() {
           </div>
         )}
       </div>
-      <MeetTheTeam />
+      {/* <MeetTheTeam />
       <div className="px-6">
         <Events />
       </div>
@@ -43,7 +38,7 @@ function Home() {
       <Testimonials />
       <div className="px-[70px] py-[250px]">
         <TakeEvents />
-      </div>
+      </div> */}
     </>
   );
 }
