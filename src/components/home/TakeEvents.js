@@ -35,10 +35,13 @@ const datas = [
 function TakeEvents() {
   return (
     <>
-      <div>
+      <div className="px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px] py-[80px] sm:py-[120px] xl:py-[250px]">
         <div>
-          <h2 className="text-[82px] text-end leading-tight font-medium ">
+          <h2 className="hidden md:block md:text-[44px] lg:text-[62px] xl:text-[82px] text-end leading-tight font-medium ">
             TAKE YOUR EVENT <br /> TO THE NEXT <br /> LEVEL
+          </h2>
+          <h2 className="md:hidden text-[36px] sm:text-[58px] leading-tight font-medium ">
+            TAKE YOUR EVENT TO THE NEXT LEVEL
           </h2>
         </div>
         <div className="py-12">
