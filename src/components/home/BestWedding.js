@@ -3,7 +3,7 @@ import React from "react";
 function BestWedding() {
   return (
     <>
-      <div className="pb-12 sm:text-center space-y-8 pt-[260px] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
+      <div className="pb-12 sm:text-center space-y-8 pt-[160px] sm:pt-[180px] lg:pt-[260px] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
         <div>
           <h4 className="text-[14px] md:text-[20px] pb-3 uppercase">
             BEST WEDDING DJ IN DC

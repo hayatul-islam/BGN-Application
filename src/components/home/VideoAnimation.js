@@ -3,7 +3,7 @@ import React from "react";
 function VideoAnimation() {
   return (
     <>
-      <div className="fixed w-[100%] h-screen md:h-[460px] lg:h-[530px] z-[-50] top-0 md:top-[15%]  lg:top-[20%] md:px-[40px] lg:px-[50px] xl:px-[70px]">
+      <div className="fixed w-[100%] h-screen sm:h-[500px]  md:h-[460px] lg:h-[530px] z-[-50] top-0 md:top-[15%]  lg:top-[20%] md:px-[40px] lg:px-[50px] xl:px-[70px]">
         <video
           className="w-full h-full md:rounded-[100px] object-cover opacity-30"
           autoPlay
