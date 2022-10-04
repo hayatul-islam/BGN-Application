@@ -4,7 +4,9 @@ import ContractUs from "../components/shared/contracts/ContractUs";
 import Footer from "../components/shared/footer/Footer";
 import Header from "../components/shared/header/Header";
 import About from "./About";
+import Contract from "./Contract";
 import Home from "./Home";
+import Uplighting from "./Uplighting";
 
 function TheLayout() {
   return (
@@ -14,6 +16,8 @@ function TheLayout() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contract" element={<Contract />} />
+          <Route path="/uplighting" element={<Uplighting />} />
         </Routes>
         <ContractUs />
         <Footer />

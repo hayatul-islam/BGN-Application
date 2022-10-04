@@ -16,7 +16,7 @@ function Header() {
   return (
     <>
       <div className="border-b fixed w-full z-50 backdrop-blur-md ">
-        <div className="flex justify-between items-center px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px] py-2 lg:py-4 ">
+        <div className="flex justify-between items-center px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px] py-2  ">
           <div
             onClick={handleHome}
             className="w-[44px] h-[44px] sm:w-[51px] sm:h-[51px] md:w-[65px] md:h-[65px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] relative cursor-pointer "
