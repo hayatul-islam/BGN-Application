@@ -35,14 +35,14 @@ const datas = [
 function OurTeam() {
   return (
     <>
-      <div className="py-[250px] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
+      <div className="py-[150px] md:py-[200px] lg:py-[250px] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
         <div className="text-center">
-          <h4 className="text-[20px] font-medium ">OUR TEAM</h4>
-          <h2 className="text-[120px] font-medium leading-tight">
+          <h4 className="text-[16px] sm:text-[20px] font-medium ">OUR TEAM</h4>
+          <h2 className="text-[35px] sm:text-[47px] md:text-[60px] lg:text-[90px] xl:text-[120px] font-medium leading-tight">
             MEET THE BGM DJ'S
           </h2>
         </div>
-        <div className="pt-[300px]">
+        <div className="pt-[100px] md:pt-[200px] xl:pt-[300px]">
           {datas?.map((data) => (
             <Team key={data?.id} data={data} />
           ))}
