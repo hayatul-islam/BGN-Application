@@ -5,24 +5,27 @@ import Explore from "./Explore";
 const datas = [
   {
     id: 1,
-    title: "Uplighting",
+    title: "Photobooth",
     body: "Glow up your venue with our wireless uplighting",
-    img: "https://images.unsplash.com/photo-1549737580-90a88172cb03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxuaWdodCUyMGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     link: "",
+    location: "Photo booth",
   },
   {
     id: 2,
-    title: "Uplighting",
+    title: "Ceremony Musicians",
     body: "Glow up your venue with our wireless uplighting",
-    img: "https://images.unsplash.com/photo-1549737580-90a88172cb03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxuaWdodCUyMGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1595101484640-e160ae22099e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjM0fHxvZmZpY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     link: "",
+    location: "Ceremony Music",
   },
   {
     id: 3,
     title: "Uplighting",
-    body: "Glow up your venue with our wireless uplighting",
-    img: "https://images.unsplash.com/photo-1549737580-90a88172cb03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxuaWdodCUyMGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    body: "The only place I want to see you when you're not on the dance floor or making a pitstop at the bar!",
+    img: "https://images.unsplash.com/photo-1556586038-29f26c3ceb20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjMyfHxvZmZpY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     link: "",
+    location: "Uplighting",
   },
 ];
 

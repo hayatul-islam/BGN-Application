@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 function Explore({ explore }) {
-  const { title, img, body } = explore || {};
+  const { title, img, body, location } = explore || {};
   return (
     <>
       <div className="grid md:flex space-y-4 md:space-x-2 justify-between">
@@ -16,7 +16,7 @@ function Explore({ explore }) {
               <span className="hidden group-hover:block">
                 <BsArrowRight size="24" />
               </span>
-              <span className="text-[#ffae00]">View up light</span>
+              <span className="text-[#ffae00]">View {location}</span>
               <span className="lg:hidden ml-4">
                 <BsArrowRight size="24" />
               </span>
