@@ -1,7 +1,6 @@
 import React from "react";
 
 function Highlights() {
-  const colors = ["#ffae00", "#0f1", "#0cf", "blue"];
   return (
     <>
       <div className="py-32 px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
