@@ -116,7 +116,7 @@ function Header() {
                   >
                     <NavLink
                       onClick={handleMemu}
-                      className=" hover:text-red-500"
+                      className=" hover:text-[#ffae00]"
                       to="/"
                     >
                       Home
@@ -129,7 +129,7 @@ function Header() {
                   >
                     <NavLink
                       onClick={handleMemu}
-                      className=" hover:text-red-500"
+                      className=" hover:text-[#ffae00]"
                       to="/about"
                     >
                       About
@@ -142,7 +142,7 @@ function Header() {
                   >
                     <NavLink
                       onClick={handleMemu}
-                      className=" hover:text-red-500"
+                      className=" hover:text-[#ffae00]"
                       to="/uplighting"
                     >
                       UPLIGHTING
@@ -155,7 +155,7 @@ function Header() {
                   >
                     <NavLink
                       onClick={handleMemu}
-                      className=" hover:text-red-500"
+                      className=" hover:text-[#ffae00]"
                       to="/contract"
                     >
                       Contract
