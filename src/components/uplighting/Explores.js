@@ -29,10 +29,10 @@ const datas = [
 function Explores() {
   return (
     <>
-      <div className="px-6 pb-[200px]">
-        <div className="hidden sm:block space-y-2 pb-12 overflow-hidden">
+      <div className="px-6 py-[100px] lg:pb-[200px]">
+        <div className=" space-y-2 pb-12 overflow-hidden">
           <ParallaxText baseVelocity={2}>
-            <div className="text-[100px]">
+            <div className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[90px] xl:text-[100px]">
               <h1 className="flex space-x-6 flex-nowrap leading-none">
                 <span className="text-[#ffae00]">EXPLORE </span>
                 <span>OTHER</span>
@@ -42,7 +42,7 @@ function Explores() {
             </div>
           </ParallaxText>
           <ParallaxText baseVelocity={-2}>
-            <div className="text-[100px]">
+            <div className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[90px] xl:text-[100px]">
               <h1 className="flex space-x-6 flex-nowrap leading-none">
                 <span className="text-[#ffae00]">EXPLORE </span>
                 <span>OTHER</span>
@@ -52,7 +52,7 @@ function Explores() {
             </div>
           </ParallaxText>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {datas?.slice(0, 2)?.map((data) => (
             <Explore key={data?.id} explore={data} />
           ))}
