@@ -58,14 +58,14 @@ function Header() {
               <NavLink className="block leading-none" to="/">
                 Home
               </NavLink>
-              <NavLink className="block leading-none" to="/">
+              <NavLink className="block leading-none" to="/about">
                 About
               </NavLink>
-              <NavLink className="block leading-none" to="/">
+              <NavLink className="block leading-none" to="/uplighting">
                 UPLIGHTING
               </NavLink>
-              <NavLink className="block leading-none" to="/">
-                Home
+              <NavLink className="block leading-none" to="/contract">
+                Contract
               </NavLink>
             </nav>
           </div>

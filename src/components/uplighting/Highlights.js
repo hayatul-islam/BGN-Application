@@ -1,6 +1,7 @@
 import React from "react";
 
 function Highlights() {
+  const colors = ["#ffae00", "#0f1", "#0cf", "blue"];
   return (
     <>
       <div className="py-32 px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
@@ -17,8 +18,31 @@ function Highlights() {
           <h1>UPLIGHTING</h1>
           <h1 className="pl-[150px]">UPLIGHTING</h1>
         </div>
-        <div className="py-4">
-          <h4 className="text-[30px]">TRY OUT SOME COLOR</h4>
+        <div className="py-4 flex items-center justify-between">
+          <h4 className="text-[30px] pl-20 ">TRY OUT SOME COLOR</h4>
+          <div className="space-x-3 flex">
+            <button
+              className={`w-[30px] h-[30px] rounded-full bg-[#ffae00]`}
+            ></button>
+            <button
+              className={`w-[30px] h-[30px] rounded-full bg-[#0f1]`}
+            ></button>
+            <button
+              className={`w-[30px] h-[30px] rounded-full bg-[#0cf]`}
+            ></button>
+            <button
+              className={`w-[30px] h-[30px] rounded-full bg-[#2318ff]`}
+            ></button>
+            <button
+              className={`w-[30px] h-[30px] rounded-full bg-[#9500ff]`}
+            ></button>
+            <button
+              className={`w-[30px] h-[30px] rounded-full bg-[#ff00c3]`}
+            ></button>
+            <button
+              className={`w-[30px] h-[30px] rounded-full bg-[red]`}
+            ></button>
+          </div>
         </div>
       </div>
     </>
