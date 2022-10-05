@@ -12,6 +12,10 @@ function Header() {
   const handleHome = () => {
     navigate("/");
   };
+  const handleMemu = () => {
+    setMenu(!menu);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -55,16 +59,32 @@ function Header() {
           </div>
           <div className="text-[32px] sm:text-[50px] md:text-[70px] lg:text-[90px] xl:text-[116px] font-medium uppercase  items-end">
             <nav className="space-y-3">
-              <NavLink className="block leading-none" to="/">
+              <NavLink
+                onClick={handleMemu}
+                className="block leading-none"
+                to="/"
+              >
                 Home
               </NavLink>
-              <NavLink className="block leading-none" to="/about">
+              <NavLink
+                onClick={handleMemu}
+                className="block leading-none"
+                to="/about"
+              >
                 About
               </NavLink>
-              <NavLink className="block leading-none" to="/uplighting">
+              <NavLink
+                onClick={handleMemu}
+                className="block leading-none"
+                to="/uplighting"
+              >
                 UPLIGHTING
               </NavLink>
-              <NavLink className="block leading-none" to="/contract">
+              <NavLink
+                onClick={handleMemu}
+                className="block leading-none"
+                to="/contract"
+              >
                 Contract
               </NavLink>
             </nav>
