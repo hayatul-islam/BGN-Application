@@ -130,7 +130,7 @@ function Header() {
                     <NavLink
                       onClick={handleMemu}
                       className=" hover:text-[#ffae00]"
-                      to="/about"
+                      to="/team"
                     >
                       About
                     </NavLink>

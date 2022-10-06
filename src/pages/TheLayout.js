@@ -15,7 +15,7 @@ function TheLayout() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/team" element={<About />} />
           <Route path="/contract" element={<Contract />} />
           <Route path="/uplighting" element={<Uplighting />} />
         </Routes>
