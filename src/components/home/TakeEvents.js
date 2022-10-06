@@ -1,4 +1,6 @@
-import React from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
+import { fadeIn } from "../../utils/varients";
 import TakeEvent from "./TakeEvent";
 
 // fake data
@@ -33,12 +35,52 @@ const datas = [
 ];
 
 function TakeEvents() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <>
-      <div className="px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px] py-[80px] sm:py-[120px] xl:py-[250px]">
+      <div
+        ref={ref}
+        className="px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px] py-[80px] sm:py-[120px] xl:py-[250px]"
+      >
         <div>
           <h2 className="hidden md:block md:text-[44px] lg:text-[62px] xl:text-[82px] text-end leading-tight font-medium ">
-            TAKE YOUR EVENT <br /> TO THE NEXT <br /> LEVEL
+            <motion.span
+              initial={{ opacity: 0, x: 700 }}
+              animate={isInView && fadeIn?.animate}
+              transition={{
+                delay: 0.1,
+                duration: 1,
+                type: "tween",
+              }}
+              className="block"
+            >
+              TAKE YOUR EVENT
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, x: 700 }}
+              animate={isInView && fadeIn?.animate}
+              transition={{
+                delay: 0.2,
+                duration: 1,
+                type: "tween",
+              }}
+              className="block"
+            >
+              TO THE NEXT
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, x: 700 }}
+              animate={isInView && fadeIn?.animate}
+              transition={{
+                delay: 0.3,
+                duration: 1,
+                type: "tween",
+              }}
+              className="block"
+            >
+              LEVEL
+            </motion.span>
           </h2>
           <h2 className="md:hidden text-[36px] sm:text-[58px] leading-tight font-medium ">
             TAKE YOUR EVENT TO THE NEXT LEVEL
