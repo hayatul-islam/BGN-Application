@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { fadeUp } from "../../utils/varients";
+import { buttonUp, fadeUp } from "../../utils/varients";
 
 function BestWedding() {
   return (
@@ -83,15 +83,11 @@ function BestWedding() {
           </div>
         </div>
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 0, 0.3, 0.8, 1] }}
-          transition={{
-            delay: 0.8,
-            type: "spring",
-            duration: 2,
-          }}
+          initial={buttonUp?.initial}
+          animate={buttonUp?.animate}
+          transition={buttonUp?.transition}
         >
-          <button className="uppercase border border-[#ffb937] hover:bg-[#ffb937] text-[24px] sm:text-[14px] md:text-[20px] lg:text-[26px] py-2 md:py-3 px-3 md:px-6 lg:px-12 rounded-lg w-full sm:w-auto">
+          <button className="uppercase border border-[#ffb937] hover:bg-[#ffb937] text-[24px] sm:text-[14px] md:text-[20px] lg:text-[26px] py-2 md:py-3 xl:py-4 px-3 md:px-6 lg:px-12 rounded-lg w-full sm:w-auto">
             Check Availability
           </button>
         </motion.div>

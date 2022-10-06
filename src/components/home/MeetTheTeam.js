@@ -1,6 +1,10 @@
-import React from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
+import { buttonUp, fadeIn, fadeUp } from "../../utils/varients";
 
 function MeetTheTeam() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <>
       <div className="grid md:grid-cols-2 gap-12 pt-[80px] lg:pt-[250px] pb-12 px-[20px] sm:px-[30px]md:px-[40px] lg:px-[50px] xl:px-0">
@@ -24,26 +28,83 @@ function MeetTheTeam() {
           </div>
           <div className="hidden md:block h-[120px] border-l-2 border-[#ffae00] ml-[70px] mt-[-30px] z-50 opacity-[99%] "></div>
         </div>
-        <div className="space-y-6">
+        <div ref={ref} className="space-y-6">
           <div className="space-y-2">
             <h1 className="text-[30px] sm:text-[47px] md:text-[36px] lg:text-[47px] xl:text-[70px] font-medium leading-none uppercase">
-              Subway tile <br /> snackwave ugh,
-              <span className="block text-[#ffae00] ">FAVORITE DJS</span>
+              <motion.span
+                initial={fadeIn?.initial}
+                animate={isInView && fadeIn?.animate}
+                transition={{
+                  delay: 0.1,
+                  duration: 2,
+                  type: "spring",
+                }}
+                className="block"
+              >
+                Subway tile
+              </motion.span>
+              <motion.span
+                initial={fadeIn?.initial}
+                animate={isInView && fadeIn?.animate}
+                transition={{
+                  delay: 0.2,
+                  duration: 2,
+                  type: "spring",
+                }}
+                className="block"
+              >
+                snackwave ugh,
+              </motion.span>
+
+              <motion.span
+                initial={fadeIn?.initial}
+                animate={isInView && fadeIn?.animate}
+                transition={{
+                  delay: 0.3,
+                  duration: 2,
+                  type: "spring",
+                }}
+                className="block text-[#ffae00] "
+              >
+                FAVORITE DJS
+              </motion.span>
             </h1>
-            <h4 className="text-[14px] lg:text-[18px] xl:text-[28px]  italic ">
+            <motion.h4
+              initial={fadeUp?.initial}
+              animate={isInView && fadeUp?.animate}
+              transition={{
+                delay: 0.8,
+                duration: 2,
+                type: "spring",
+              }}
+              className="text-[14px] lg:text-[18px] xl:text-[28px]  italic "
+            >
               SERVING DC, MARYLAND, AND VIRGINIA
-            </h4>
-            <p className="text-[14px] xl:text-[24px] max-w-[660px] ">
+            </motion.h4>
+            <motion.p
+              initial={fadeUp?.initial}
+              animate={isInView && fadeUp?.animate}
+              transition={{
+                delay: 1,
+                duration: 2,
+                type: "spring",
+              }}
+              className="text-[14px] xl:text-[24px] max-w-[660px] "
+            >
               Franzen knausgaard before they sold out fam neutra pop-up subway
               tile health goth wolf glossier authentic edison bulb man braid
               prism sriracha cray.
-            </p>
+            </motion.p>
           </div>
-          <div>
-            <button className="uppercase border border-[#ffb937] text-[24px] lg:text-[26px] py-2 xl:py-4 px-5 lg:px-12 w-full sm:w-auto rounded-lg">
+          <motion.div
+            initial={buttonUp?.initial}
+            animate={buttonUp?.animate}
+            transition={buttonUp?.transition}
+          >
+            <button className="uppercase border border-[#ffb937] hover:bg-[#ffb937] text-[24px] lg:text-[26px] py-2 xl:py-4 px-5 lg:px-12 w-full sm:w-auto rounded-lg">
               Meet The Team
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
