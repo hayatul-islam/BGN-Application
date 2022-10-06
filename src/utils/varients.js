@@ -37,3 +37,11 @@ export const buttonUp = {
     duration: 2,
   },
 };
+export const fadeInHr = {
+  initial: { opacity: 0, x: -5000 },
+  animate: { x: 0, opacity: 1 },
+  transition: {
+    duration: 2,
+    type: "tween",
+  },
+};
