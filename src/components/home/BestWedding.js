@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { buttonUp, fadeUp } from "../../utils/varients";
 
 function BestWedding() {
+  const navigate = useNavigate();
+  const handleContract = () => {
+    navigate("/contract");
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="pb-12 sm:text-center space-y-8 pt-[160px] sm:pt-[180px] lg:pt-[260px] px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
@@ -87,7 +93,10 @@ function BestWedding() {
           animate={buttonUp?.animate}
           transition={buttonUp?.transition}
         >
-          <button className="uppercase border border-[#ffb937] hover:bg-[#ffb937] text-[24px] sm:text-[14px] md:text-[20px] lg:text-[26px] py-2 md:py-3 xl:py-4 px-3 md:px-6 lg:px-12 rounded-lg w-full sm:w-auto">
+          <button
+            onClick={handleContract}
+            className="uppercase border border-[#ffb937] hover:bg-[#ffb937] text-[24px] sm:text-[14px] md:text-[20px] lg:text-[26px] py-2 md:py-3 xl:py-4 px-3 md:px-6 lg:px-12 rounded-lg w-full sm:w-auto"
+          >
             Check Availability
           </button>
         </motion.div>

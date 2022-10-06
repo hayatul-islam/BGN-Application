@@ -1,10 +1,16 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { buttonUp, fadeIn, fadeUp } from "../../utils/varients";
 
 function MeetTheTeam() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const navigate = useNavigate();
+  const handleTeam = () => {
+    navigate("/team");
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="grid md:grid-cols-2 gap-12 pt-[80px] lg:pt-[250px] pb-12 px-[20px] sm:px-[30px]md:px-[40px] lg:px-[50px] xl:px-0">
@@ -101,7 +107,10 @@ function MeetTheTeam() {
             animate={buttonUp?.animate}
             transition={buttonUp?.transition}
           >
-            <button className="uppercase border border-[#ffb937] hover:bg-[#ffb937] text-[24px] lg:text-[26px] py-2 xl:py-4 px-5 lg:px-12 w-full sm:w-auto rounded-lg">
+            <button
+              onClick={handleTeam}
+              className="uppercase border border-[#ffb937] hover:bg-[#ffb937] text-[24px] lg:text-[26px] py-2 xl:py-4 px-5 lg:px-12 w-full sm:w-auto rounded-lg"
+            >
               Meet The Team
             </button>
           </motion.div>
