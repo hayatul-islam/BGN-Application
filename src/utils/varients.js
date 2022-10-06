@@ -45,3 +45,18 @@ export const fadeInHr = {
     type: "tween",
   },
 };
+
+export const lineHeightDown = {
+  initial: {
+    opacity: 0,
+    lineHeight: 0.8,
+  },
+  animate: {
+    opacity: 1,
+    lineHeight: 1,
+  },
+  transition: {
+    delay: 0.6,
+    duration: 2,
+  },
+};
