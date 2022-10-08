@@ -4,7 +4,7 @@ function ContractUs() {
   return (
     <>
       <div className="mx-[20px] sm:mx-[30px] md:mx-[40px] lg:mx-[50px] xl:mx-[70px] mb-12 grid lg:grid-cols-2 bg-[#000] rounded-[60px] ">
-        <div className="p-12">
+        <div className="px-6 py-12 sm:px-8 xl:p-12">
           <div>
             <h1 className="text-[30px] md:text-[46px] font-medium pb-4">
               Contact Us
