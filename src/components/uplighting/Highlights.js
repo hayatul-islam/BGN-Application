@@ -4,8 +4,13 @@ import { lineHeightDown } from "../../utils/varients";
 
 function Highlights() {
   const [color, setColor] = useState("ff4015a1");
+  const [change, setchange] = useState(false);
   const handleColor = (color) => {
-    setColor(color);
+    setchange(true);
+    setTimeout(() => {
+      setColor(color);
+      setchange(false);
+    }, 100);
   };
   return (
     <>
@@ -23,13 +28,31 @@ function Highlights() {
             duration: 2,
             type: "spring",
           }}
-          className="text-[42px] sm:text-[60px] md:text-[80px] lg:text-[110px] xl:text-[130px] h-[460px] sm:h-[530px] md:h-[600px] xl:h-[530px] flex justify-center items-center font-bold text-center rounded-[20px] sm:rounded-[30px] md:rounded-[50px] lg:rounded-[80px] xl:rounded-[100px] leading-none"
+          className="text-[42px] sm:text-[60px] md:text-[80px] lg:text-[110px] xl:text-[130px] h-[460px] sm:h-[530px] md:h-[600px] xl:h-[530px] flex justify-center items-center font-bold text-center rounded-[20px] sm:rounded-[30px] md:rounded-[50px] lg:rounded-[80px] xl:rounded-[100px] leading-none relative overflow-hidden"
           style={{
-            background: `linear-gradient(#${color} 100%, rgba(0, 0, 0, 0.5) 100%),url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)`,
+            background: `url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)`,
             backgroundSize: "cover",
           }}
         >
-          <div>
+          <motion.div
+            initial={{
+              width: "10px",
+              opacity: 0,
+            }}
+            animate={{
+              width: change ? "1%" : ["1%", "100%"],
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1.3,
+              type: "spring",
+            }}
+            className={`absolute top-0 right-0 w-[10px] z-30 h-full`}
+            style={{
+              background: `linear-gradient(#${color} 100%, rgba(0, 0, 0, 0.5) 100%)`,
+            }}
+          ></motion.div>
+          <div className="z-50">
             <motion.h1
               initial={lineHeightDown?.initial}
               animate={lineHeightDown?.animate}
