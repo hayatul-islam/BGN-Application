@@ -5,13 +5,21 @@ import { lineHeightDown } from "../../utils/varients";
 function Highlights() {
   const [color, setColor] = useState("ff4015a1");
   const [change, setchange] = useState(false);
+  const [beforeColor, setBeforColor] = useState(color);
+  const [beforeColorShow, setBeforColorShow] = useState(false);
   const handleColor = (color) => {
     setchange(true);
+    setBeforColorShow(true);
     setTimeout(() => {
       setColor(color);
       setchange(false);
     }, 100);
+    setTimeout(() => {
+      setBeforColor(color);
+      setBeforColorShow(false);
+    }, 1000);
   };
+  console.log(beforeColor);
   return (
     <>
       <div className="py-28 sm:py-32 px-[20px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[70px]">
@@ -44,14 +52,23 @@ function Highlights() {
               opacity: 1,
             }}
             transition={{
-              duration: 1.3,
+              duration: 1,
               type: "spring",
             }}
             className={`absolute top-0 right-0 w-[10px] z-30 h-full`}
             style={{
               background: `linear-gradient(#${color} 100%, rgba(0, 0, 0, 0.5) 100%)`,
             }}
-          ></motion.div>
+          />
+          {beforeColorShow && (
+            <motion.div
+              className={`absolute top-0 right-0 w-full z-30 h-full`}
+              style={{
+                background: `linear-gradient(#${beforeColor} 100%, rgba(0, 0, 0, 0.5) 100%)`,
+              }}
+            />
+          )}
+
           <div className="z-50">
             <motion.h1
               initial={lineHeightDown?.initial}
