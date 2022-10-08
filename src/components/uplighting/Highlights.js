@@ -62,6 +62,11 @@ function Highlights() {
           />
           {beforeColorShow && (
             <motion.div
+              initial={{ opacity: 1 }}
+              animate={{
+                opacity: [1, 0.5, 0.4],
+              }}
+              transition={{ duration: 1, type: "spring" }}
               className={`absolute top-0 right-0 w-full z-30 h-full`}
               style={{
                 background: `linear-gradient(#${beforeColor} 100%, rgba(0, 0, 0, 0.5) 100%)`,
