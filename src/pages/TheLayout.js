@@ -6,6 +6,7 @@ import Header from "../components/shared/header/Header";
 import About from "./About";
 import Contract from "./Contract";
 import Home from "./Home";
+import PhotoBooth from "./PhotoBooth";
 import Uplighting from "./Uplighting";
 
 function TheLayout() {
@@ -18,6 +19,7 @@ function TheLayout() {
           <Route path="/team" element={<About />} />
           <Route path="/contract" element={<Contract />} />
           <Route path="/uplighting" element={<Uplighting />} />
+          <Route path="/photo-booth" element={<PhotoBooth />} />
         </Routes>
         <ContractUs />
         <Footer />

@@ -1,11 +1,17 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { fadeIn } from "../../utils/varients";
 
 function TakeEvent({ data }) {
-  const { img, title, body, view, status } = data || {};
+  const { img, title, body, view, status, link } = data || {};
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate(`/${link}`);
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div ref={ref}>
@@ -38,7 +44,10 @@ function TakeEvent({ data }) {
               </motion.h1>
             </div>
             <p className="text-[14px] lg:text-[18px] xl:text-[24px]">{body}</p>
-            <button className="flex items-center space-x-4 lg:space-x-6 text-[18px] md:text-[14px] lg:text-[24px] py-3 ">
+            <button
+              onClick={handleNavigate}
+              className="flex items-center space-x-4 lg:space-x-6 text-[18px] md:text-[14px] lg:text-[24px] py-3 "
+            >
               <span className="hover:text-[#ffae00]">{view}</span>
               <img
                 className="w-[14px] h-[14px] md:w-[10px] md:h-[10px] lg:w-[24px] lg:h-[24px]"
